@@ -1,0 +1,116 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f6f7;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* HEADER */
+header {
+  background: linear-gradient(90deg, #2471a3, #2e86c1);
+  color: white;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.left-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.left-header img {
+  border-radius: 10px;
+}
+
+.right-header .buton {
+  margin-left: 10px;
+  background-color: #1abc9c;
+}
+
+.right-header .buton:hover {
+  background-color: #16a085;
+}
+
+/* MAIN */
+main {
+  display: flex;
+  padding: 20px;
+  flex: 1;
+  gap: 20px;
+}
+
+.meniu, .sidebar, .continut {
+  background-color: white;
+  padding: 15px;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.meniu { width: 20%; }
+.continut { width: 60%; }
+.sidebar { width: 20%; text-align: center; }
+
+/* BUTTONS */
+.buton {
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: #3498db;
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: 0.4s;
+}
+
+.buton:hover {
+  background-color: #1f618d;
+}
+
+/* FOOTER */
+footer {
+  background-color: #2c3e50;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: auto;
+}
+
+ul.nimic {
+  list-style-type: none;
+  padding: 0;
+}
+
+table, td, th{
+  border-radius:10px;
+  border: 1px solid black;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input, textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
